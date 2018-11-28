@@ -1,5 +1,22 @@
 # Docker-based WordPress Stack
 
+## Introduction
+The idea here is to facilitate the development process with WordPress. Easy install and easy debugging, you get it all!
+This repo was made for W3E event.
+
+## How to run WordPress
+Prerequisites: have Docker and Visual Studio Code installed
+1. Clone this repo
+2. Download [the latest version of WordPress](https://wordpress.org) or the [current beta (5.0-RC1)](https://wordpress.org/wordpress-5.0-RC1.zip) (Check the [blog](https://wordpress.org/news/) for more recent releases.)
+3. Unzip WordPress files in `wordpress` folder
+4. Run `make up-dev` and visit [wp.docker.localhost:8000](http://wp.docker.localhost:8000)
+
+## How to debug WordPress in Visual Studio Code (MacOS)
+In order to debug, use Visual Studio Code and go in the debugging panel. If the launch.json file is found, you just have to start debugging and set a breakpoint.
+For other operating systems, please modify the various docker-compose files where needed (look at comments).
+
+`Hereafter comes Wodby's Readme for reference:`
+
 [![Build Status](https://travis-ci.org/wodby/docker4wordpress.svg?branch=master)](https://travis-ci.org/wodby/docker4wordpress)
 
 ## Introduction
