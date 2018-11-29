@@ -9,7 +9,8 @@ Prerequisites: have Docker and Visual Studio Code installed
 1. Clone this repo
 2. Download [the latest version of WordPress](https://wordpress.org) or the [current beta (5.0-RC1)](https://wordpress.org/wordpress-5.0-RC1.zip) (Check the [blog](https://wordpress.org/news/) for more recent releases.)
 3. Unzip WordPress files in `wordpress` folder
-4. Run `make up-dev` and visit [wp.docker.localhost:8000](http://wp.docker.localhost:8000)
+4. Add following line at the end of your /etc/hosts file: `127.0.0.1    wp.docker.localhost`
+5. Run `make up-dev` and visit [wp.docker.localhost:8000](http://wp.docker.localhost:8000)
 
 ## How to debug WordPress in Visual Studio Code (MacOS)
 In order to debug, use Visual Studio Code and go in the debugging panel. If the launch.json file is found, you just have to start debugging and set a breakpoint.
