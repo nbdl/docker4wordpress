@@ -12,6 +12,8 @@ Prerequisites: have Docker and Visual Studio Code installed
 4. Add following line at the end of your /etc/hosts file: `127.0.0.1    wp.docker.localhost`
 5. Run `make up-dev` and visit [wp.docker.localhost:8000](http://wp.docker.localhost:8000)
 
+Additionally you can visit [wp.docker.localhost:8080](http://wp.docker.localhost:8080) to see traefik's interface, which will give you all active frontends and backends docker images.
+
 ## How to debug WordPress in Visual Studio Code (MacOS)
 In order to debug, use Visual Studio Code and go in the debugging panel. If the launch.json file is found, you just have to start debugging and set a breakpoint.
 For other operating systems, please modify the various docker-compose files where needed (look at comments).
